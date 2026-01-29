@@ -1,0 +1,3516 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LPB8078GV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6LPB8078GV');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פורום הצליאק החרדי - האתר הרישמי </title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23e6c453'/%3E%3Cg fill='white' transform='translate(50,50)'%3E%3Cpath d='M0 28 L0 -5' stroke='white' stroke-width='2.5' fill='none'/%3E%3Cellipse cx='-4' cy='8' rx='3.5' ry='6' transform='rotate(-25 -4 8)'/%3E%3Cellipse cx='4' cy='5' rx='3.5' ry='6' transform='rotate(25 4 5)'/%3E%3Cellipse cx='-5' cy='-2' rx='3.2' ry='5.5' transform='rotate(-20 -5 -2)'/%3E%3Cellipse cx='5' cy='-5' rx='3.2' ry='5.5' transform='rotate(20 5 -5)'/%3E%3Cellipse cx='-4' cy='-12' rx='2.8' ry='5' transform='rotate(-15 -4 -12)'/%3E%3Cellipse cx='4' cy='-15' rx='2.8' ry='5' transform='rotate(15 4 -15)'/%3E%3Cellipse cx='-3' cy='-21' rx='2.5' ry='4.5' transform='rotate(-10 -3 -21)'/%3E%3Cellipse cx='3' cy='-24' rx='2.5' ry='4.5' transform='rotate(10 3 -24)'/%3E%3Cellipse cx='0' cy='-30' rx='2' ry='4'/%3E%3Cpath d='M0 -34 L-3 -40 M0 -34 L0 -42 M0 -34 L3 -40' stroke='white' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23c0392b' stroke-width='4'/%3E%3Cline x1='22' y1='68' x2='78' y2='32' stroke='%23c0392b' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Heebo:wght@400;500;700;800&family=Varela+Round&family=Alef:wght@400;700&family=Rubik:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root { 
+            --primary: #4db8d9; 
+            --primary-light: #7dd3e8;
+            --primary-dark: #2d8aa8;
+            --accent: #e6c453; 
+            --accent-light: #f0de9a;
+            --accent-dark: #d4b33a;
+            --title-color: #1a5276;
+            --bg: #f5f7fa; 
+            --card: #ffffff; 
+            --text: #2d3748; 
+            --text-light: #4a5568;
+            --text-muted: #718096;
+            --info: #ebf4ff;
+            --info-border: #90cdf4;
+            --success: #48bb78;
+            --warning: #ed8936;
+            --error: #e74c3c;
+            --shadow: rgba(0,0,0,0.1);
+            --shadow-lg: rgba(0,0,0,0.15);
+        }
+        [data-theme="dark"] {
+            --primary: #3a9cb8; 
+            --primary-light: #5dbdd6;
+            --primary-dark: #2a7a94;
+            --bg: #0f1419; 
+            --card: #1a202c; 
+            --text: #e2e8f0; 
+            --text-light: #a0aec0;
+            --text-muted: #718096;
+            --info: #1a365d;
+            --info-border: #4a6fa5;
+            --error: #e74c3c;
+            --shadow: rgba(0,0,0,0.3);
+            --shadow-lg: rgba(0,0,0,0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: 'Rubik', 'Heebo', sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            margin: 0; 
+            transition: background 0.4s ease, color 0.4s ease; 
+            padding-bottom: 120px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        header { 
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+            color: white; 
+            padding: 1.5rem 2rem; 
+            position: relative;
+            box-shadow: 0 8px 40px var(--shadow-lg);
+            overflow: hidden;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding-left: 30px;
+        }
+        
+        .header-text {
+            text-align: right;
+        }
+        
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-right: auto;
+            margin-left: 30px;
+        }
+        
+        .header-btn {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid var(--accent);
+            color: white;
+            padding: 10px 20px;
+            height: 44px;
+            border-radius: 22px;
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+        
+        .header-btn:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        
+        .header-btn i {
+            font-size: 1rem;
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 22px;
+            padding: 0 18px;
+            height: 44px;
+            border: 2px solid var(--accent);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            gap: 10px;
+        }
+        
+        .search-box:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        
+        .search-box:focus-within {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--accent);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        
+        .search-box input {
+            background: rgba(255,255,255,0.95);
+            border: none;
+            color: black;
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.9rem;
+            width: 140px;
+            outline: none;
+            caret-color: black;
+            text-shadow: none;
+            padding: 4px 8px;
+            margin: 0;
+            border-radius: 15px;
+        }
+        
+        .search-box input::placeholder {
+            color: rgba(0,0,0,0.5);
+        }
+        
+        .search-box i {
+            color: var(--accent);
+            margin-left: 10px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a227' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--accent-dark), var(--accent), var(--accent-light), var(--accent), var(--accent-dark));
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-family: 'Frank Ruhl Libre', 'Alef', serif; 
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+            animation: titleFadeIn 1s ease-out;
+            color: var(--title-color);
+        }
+
+        header .subtitle {
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+            opacity: 0.95;
+            animation: subtitleFadeIn 1.2s ease-out;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .header-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header-icon .logo-svg {
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+            transition: transform 0.3s ease;
+        }
+        
+        .header-icon .logo-svg:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        @keyframes logoPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes wheatSway {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-3deg); }
+            75% { transform: rotate(3deg); }
+        }
+        
+        /* Circle circumference = 2πr = 2π×42 ≈ 264 */
+        @keyframes noEntryStroke {
+            0% { 
+                stroke-dasharray: 0 264;
+                stroke-dashoffset: 0;
+            }
+            50% { 
+                stroke-dasharray: 264 264;
+                stroke-dashoffset: 0;
+            }
+            100% { 
+                stroke-dasharray: 0 264;
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        /* Line length calculated from coordinates: sqrt((78-22)² + (32-68)²) ≈ 79 */
+        @keyframes noEntryLine {
+            0% { 
+                stroke-dasharray: 0 79;
+                stroke-dashoffset: 0;
+            }
+            50% { 
+                stroke-dasharray: 79 79;
+                stroke-dashoffset: 0;
+            }
+            100% { 
+                stroke-dasharray: 0 79;
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .logo-no-entry circle {
+            animation: noEntryStroke 3s ease-in-out infinite;
+        }
+        
+        .logo-no-entry line {
+            animation: noEntryLine 3s ease-in-out infinite;
+        }
+
+        .user-display {
+            background: rgba(255,255,255,0.15); 
+            backdrop-filter: blur(15px);
+            border: 2px solid var(--accent); 
+            color: white; 
+            padding: 0 20px;
+            height: 44px;
+            border-radius: 22px;
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .user-display .user-name {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .logout-btn {
+            background: rgba(231, 76, 60, 0.8);
+            border: none;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: 'Heebo', sans-serif;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .logout-btn:hover {
+            background: rgba(231, 76, 60, 1);
+        }
+
+        .sidebar-toggle-btn {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 20px var(--shadow-lg);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .sidebar-toggle-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px var(--shadow-lg);
+        }
+        
+        .sidebar-toggle-btn i {
+            font-size: 1.3rem;
+        }
+
+        .main-layout {
+            display: block;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 40px 50px;
+            padding-right: 70px;
+            transition: all 0.3s ease;
+        }
+        
+        .main-layout.sidebar-hidden {
+            padding-right: 50px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 100px;
+            right: 80px;
+            width: 380px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 40px;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .sidebar.hidden {
+            display: none;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 998;
+            display: none;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        
+        .sidebar-overlay.visible {
+            display: block;
+        }
+
+        .sidebar-card {
+            background: var(--card);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px var(--shadow);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            animation: slideInRight 0.6s ease-out;
+        }
+
+        .sidebar-card:hover {
+            box-shadow: 0 15px 50px var(--shadow-lg);
+        }
+
+        .accordion-header {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text);
+            padding: 20px 25px;
+            background: linear-gradient(135deg, var(--card), var(--bg));
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .accordion-header:hover {
+            background: var(--info);
+        }
+
+        .accordion-header.active {
+            border-bottom-color: var(--accent);
+            background: var(--info);
+        }
+
+        .accordion-header .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .accordion-header .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(201, 162, 39, 0.3);
+        }
+
+        .accordion-header .icon-wrapper i {
+            font-size: 1.4rem;
+            color: white;
+        }
+
+        .accordion-header .toggle-icon {
+            font-size: 1rem;
+            color: var(--text-muted);
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .contact-card-header {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(192, 57, 43, 0.05));
+            border: 2px solid rgba(231, 76, 60, 0.3);
+            border-radius: 20px;
+        }
+
+        .contact-card-header:hover {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.2), rgba(192, 57, 43, 0.1));
+            border-color: rgba(231, 76, 60, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.2);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--card);
+        }
+
+        .accordion-content.open {
+            max-height: 2000px;
+            overflow-y: auto;
+        }
+
+        .accordion-inner {
+            padding: 25px;
+        }
+
+        .recipe-card {
+            background: linear-gradient(135deg, var(--info), rgba(255,255,255,0.5));
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--accent);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .recipe-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .recipe-card:hover {
+            transform: translateX(-8px);
+            box-shadow: 0 8px 25px var(--shadow);
+        }
+
+        .recipe-card .recipe-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card .recipe-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--accent-light), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.25);
+        }
+
+        .recipe-card .recipe-icon i {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+        }
+
+        .recipe-card h4 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .recipe-card .recipe-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .recipe-card .recipe-meta span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .recipe-card .recipe-meta i {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .recipe-card .recipe-desc {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .recipe-details {
+            display: none;
+            padding-top: 20px;
+            border-top: 2px dashed var(--info-border);
+            margin-top: 15px;
+        }
+
+        .recipe-details.open {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        .recipe-section {
+            margin-bottom: 20px;
+        }
+
+        .recipe-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .recipe-section h5 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .recipe-section h5 i {
+            color: var(--accent);
+        }
+
+        .recipe-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .recipe-section li {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            padding: 8px 0;
+            padding-right: 25px;
+            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .recipe-section li:last-child {
+            border-bottom: none;
+        }
+
+        .recipe-section li::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .recipe-section ol {
+            padding-right: 25px;
+            margin: 0;
+        }
+
+        .recipe-section ol li {
+            padding-right: 10px;
+        }
+
+        .recipe-section ol li::before {
+            display: none;
+        }
+
+        .info-accordion {
+            margin-bottom: 15px;
+        }
+
+        .info-accordion:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-header {
+            background: linear-gradient(135deg, var(--card), rgba(255,255,255,0.8));
+            padding: 20px 25px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid var(--info-border);
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+
+        .info-header:hover {
+            border-color: #667eea;
+            transform: translateX(-8px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        .info-header:active {
+            transform: translateX(-8px) scale(0.98);
+        }
+
+        .info-header .info-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .info-header .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .info-header .info-icon::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            border-radius: 16px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-header:hover .info-icon::before {
+            opacity: 1;
+            animation: pulse 1.5s infinite;
+        }
+
+        .info-header .info-icon i {
+            font-size: 1.3rem;
+            color: white;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .info-header h4 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0;
+        }
+
+        /* Hide toggle icon - no longer needed for modal system */
+        .info-header .toggle-icon {
+            display: none;
+        }
+
+        /* Hide info-content by default - will be shown in modal */
+        .info-content {
+            display: none;
+        }
+
+        /* Info Modal Styles */
+        .info-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .info-modal-content {
+            background: var(--card);
+            padding: 45px;
+            border-radius: 24px;
+            width: 95%;
+            max-width: 700px;
+            max-height: 85vh;
+            overflow-y: auto;
+            color: var(--text);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            animation: modalSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .info-modal-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--info-border);
+        }
+
+        .info-modal-header .info-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .info-modal-header .info-icon i {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .info-modal-header h2 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0;
+        }
+
+        .info-modal-close {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--text-muted), var(--text-light));
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .info-modal-close:hover {
+            background: linear-gradient(135deg, var(--error), #c0392b);
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        .info-modal-close i {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .info-inner {
+            padding: 20px;
+        }
+
+        .info-inner p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .info-inner p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-inner ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-inner li {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            padding: 10px 0;
+            padding-right: 30px;
+            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .info-inner li:last-child {
+            border-bottom: none;
+        }
+
+        .info-inner li::before {
+            font-family: 'Font Awesome 6 Free';
+            content: '\f00c';
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            color: var(--success);
+            font-size: 0.85rem;
+        }
+
+        .info-inner li.warning::before {
+            content: '\f071';
+            color: var(--warning);
+        }
+        
+        .styled-rules-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .styled-rules-list li {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            padding: 12px 0;
+            padding-right: 35px;
+            position: relative;
+            border-bottom: none;
+            line-height: 1.7;
+        }
+        
+        .styled-rules-list li::before {
+            font-family: 'Font Awesome 6 Free';
+            content: '\f111';
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            color: var(--primary);
+            font-size: 0.5rem;
+            top: 18px;
+        }
+
+        .container { 
+            flex: 1;
+        }
+
+        .nav-tabs { 
+            display: flex; 
+            gap: 15px; 
+            overflow-x: auto; 
+            padding: 30px 15px; 
+            position: sticky; 
+            top: 0; 
+            background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 90%, transparent 100%);
+            z-index: 10;
+            padding-bottom: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn { 
+            background: var(--card); 
+            border: 2px solid rgba(0,0,0,0.1); 
+            padding: 10px 20px;
+            border-radius: 12px; 
+            cursor: pointer; 
+            font-weight: 600; 
+            color: var(--text);
+            transition: all 0.3s ease; 
+            white-space: nowrap;
+            font-family: 'Heebo', sans-serif;
+            box-shadow: 0 4px 15px var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .tab-btn .tab-icon {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, var(--info), var(--info-border));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn .tab-icon i {
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+        
+        .tab-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px var(--shadow-lg);
+            border-color: var(--accent);
+        }
+
+        .tab-btn.active { 
+            background: linear-gradient(135deg, var(--primary), var(--primary-light)); 
+            color: white; 
+            border-color: transparent;
+            transform: scale(1.05);
+        }
+
+        .tab-btn.active .tab-icon {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .tab-btn.active .tab-icon i {
+            color: white;
+        }
+
+        .thread-card { 
+            background: var(--card); 
+            border-radius: 16px; 
+            padding: 20px; 
+            margin-bottom: 18px;
+            box-shadow: 0 8px 30px var(--shadow); 
+            border-right: 4px solid var(--accent);
+            animation: slideUp 0.6s ease-out; 
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .thread-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px var(--shadow-lg);
+        }
+
+        .thread-card small {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .thread-card small i {
+            color: var(--accent);
+        }
+
+        .thread-card h3 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 10px 0;
+            color: var(--text);
+        }
+
+        .thread-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.95rem;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .reply-box { 
+            margin-top: 25px; 
+            padding: 25px; 
+            background: var(--info); 
+            border-radius: 16px; 
+            display: none;
+            border: 2px solid var(--info-border);
+        }
+        
+        .reply-item { 
+            padding: 15px 0; 
+            border-bottom: 1px solid var(--info-border);
+        }
+
+        .reply-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .reply-to-reply-box {
+            margin-top: 10px;
+            margin-right: 28px;
+            padding: 12px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 12px;
+            display: none;
+        }
+
+        .reply-to-reply-box.open {
+            display: block;
+        }
+
+        .reply-item p,
+        .nested-reply p {
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .nested-reply {
+            margin-right: 30px;
+            padding: 12px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 10px;
+            margin-top: 10px;
+            border-right: 3px solid var(--accent);
+        }
+
+        .reply-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 5px 10px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .reply-btn:hover {
+            background: var(--info);
+        }
+
+        .modal { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.8); 
+            align-items: center; 
+            justify-content: center; 
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+        }
+        
+        .modal-content { 
+            background: var(--card); 
+            padding: 40px; 
+            border-radius: 24px; 
+            width: 95%; 
+            max-width: 580px; 
+            color: var(--text);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            animation: modalPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--text-muted), var(--text-light));
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .modal-close-btn:hover {
+            background: linear-gradient(135deg, var(--error), #c0392b);
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        .modal-close-btn i {
+            color: white;
+            font-size: 1rem;
+        }
+
+        .auth-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid var(--primary);
+        }
+
+        .auth-tab {
+            flex: 1;
+            padding: 14px 20px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-family: 'Heebo', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            transition: all 0.3s ease;
+        }
+
+        .auth-tab:hover {
+            background: var(--info);
+        }
+
+        .auth-tab.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+        }
+
+        .auth-form {
+            display: none;
+        }
+
+        .auth-form.active {
+            display: block;
+        }
+        
+        .terms-checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 20px 0;
+            cursor: pointer;
+            padding: 15px;
+            background: var(--info);
+            border-radius: 12px;
+            border: 2px solid var(--info-border);
+            transition: all 0.3s ease;
+        }
+        
+        .terms-checkbox-container:hover {
+            background: var(--info-border);
+        }
+        
+        .terms-checkbox {
+            width: 28px;
+            height: 28px;
+            border: 3px solid var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--card);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+        
+        .terms-checkbox.checked {
+            background: linear-gradient(135deg, var(--success), #27ae60);
+            border-color: var(--success);
+        }
+        
+        .terms-checkbox i {
+            color: white;
+            font-size: 1rem;
+            display: none;
+        }
+        
+        .terms-checkbox.checked i {
+            display: block;
+            animation: checkPop 0.3s ease;
+        }
+        
+        @keyframes checkPop {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .terms-text {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+        .terms-link {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .terms-link:hover {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        
+        .terms-modal-content {
+            max-width: 750px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        
+        .terms-modal-body {
+            padding: 10px 0;
+        }
+        
+        .terms-section {
+            margin-bottom: 2rem;
+        }
+        
+        .terms-section h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .terms-section h3 i {
+            font-size: 1.1rem;
+        }
+        
+        .terms-footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--primary);
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        
+        .terms-footer p {
+            margin: 0.5rem 0;
+        }
+        
+        .btn-main:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+        }
+
+        .modal-content h2 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .modal-content h2 i {
+            color: var(--accent);
+        }
+
+        input, textarea, select { 
+            width: 100%; 
+            padding: 16px 20px; 
+            margin: 12px 0; 
+            border: 2px solid rgba(0,0,0,0.1); 
+            border-radius: 14px; 
+            font-size: 1rem; 
+            box-sizing: border-box; 
+            background: var(--bg); 
+            color: var(--text);
+            font-family: 'Rubik', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.15);
+            background: var(--card);
+        }
+
+        input:disabled, textarea:disabled, select:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+        
+        .btn-main { 
+            background: linear-gradient(135deg, var(--primary), var(--primary-light)); 
+            color: white; 
+            border: none; 
+            padding: 18px; 
+            border-radius: 14px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-weight: 600;
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 25px var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-main i {
+            font-size: 1rem;
+        }
+
+        .btn-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--text-muted);
+            margin-top: 12px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-light);
+        }
+
+        /* Success Toast Notification */
+        .toast-notification {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: linear-gradient(135deg, var(--success), #2d9b5c);
+            color: white;
+            padding: 18px 28px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(72, 187, 120, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 2000;
+            animation: toastSlideIn 0.4s ease-out;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 500;
+        }
+
+        .toast-notification i {
+            font-size: 1.3rem;
+        }
+
+        .toast-notification.hide {
+            animation: toastSlideOut 0.4s ease-in forwards;
+        }
+
+        @keyframes toastSlideIn {
+            from { opacity: 0; transform: translateX(100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes toastSlideOut {
+            from { opacity: 1; transform: translateX(0); }
+            to { opacity: 0; transform: translateX(100px); }
+        }
+
+        /* Delete Button */
+        .delete-btn {
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 5px 10px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-family: 'Heebo', sans-serif;
+            margin-right: 8px;
+        }
+
+        .delete-btn:hover {
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .fab { 
+            position: fixed; 
+            bottom: 40px; 
+            left: 40px; 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark)); 
+            color: white; 
+            font-size: 2rem; 
+            border: none; 
+            cursor: pointer; 
+            box-shadow: 0 12px 40px rgba(201, 162, 39, 0.4); 
+            z-index: 99;
+            transition: all 0.3s ease;
+            animation: fabPulse 2s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fab:hover {
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 0 18px 50px rgba(201, 162, 39, 0.5);
+        }
+
+        @keyframes slideUp { 
+            from { opacity: 0; transform: translateY(40px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        @keyframes slideDown { 
+            from { opacity: 0; transform: translateY(-10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        @keyframes slideInRight { 
+            from { opacity: 0; transform: translateX(40px); } 
+            to { opacity: 1; transform: translateX(0); } 
+        }
+
+        @keyframes titleFadeIn { 
+            from { opacity: 0; transform: translateY(-30px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        @keyframes subtitleFadeIn { 
+            from { opacity: 0; } 
+            to { opacity: 0.95; } 
+        }
+
+        @keyframes modalPop { 
+            from { opacity: 0; transform: scale(0.8); } 
+            to { opacity: 1; transform: scale(1); } 
+        }
+
+        @keyframes fabPulse { 
+            0%, 100% { box-shadow: 0 12px 40px rgba(201, 162, 39, 0.4); }
+            50% { box-shadow: 0 12px 50px rgba(201, 162, 39, 0.6); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: 2;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .header-content {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .header-controls {
+                margin-left: 30px;
+            }
+            
+            .search-box input {
+                width: 120px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .header-text {
+                text-align: center;
+            }
+            
+            .header-controls {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 10px 0;
+            }
+            
+            .header-btn {
+                font-size: 0.8rem;
+                padding: 8px 14px;
+                height: 38px;
+            }
+            
+            .search-box {
+                height: 38px;
+            }
+            
+            .search-container {
+                margin: 0 auto;
+            }
+            
+            .search-box input {
+                width: 120px;
+            }
+            
+            .header-icon {
+                font-size: 1.8rem;
+            }
+            
+            .header-icon .logo-svg {
+                width: 60px;
+                height: 60px;
+            }
+
+            .nav-tabs {
+                gap: 10px;
+            }
+
+            .tab-btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+
+            .tab-btn .tab-icon {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .sidebar-toggle-btn {
+                top: 80px;
+                right: 10px;
+                width: 40px;
+                height: 40px;
+            }
+            
+            /* Better mobile layout for thread cards */
+            .thread-card {
+                padding: 15px;
+            }
+            
+            .thread-card h3 {
+                font-size: 1.1rem;
+            }
+            
+            .thread-card p {
+                font-size: 0.9rem;
+            }
+            
+            /* Better mobile layout for reply sections */
+            .reply-item {
+                padding: 12px;
+            }
+            
+            .reply-item > div {
+                flex-direction: column;
+                align-items: flex-start !important;
+                gap: 10px;
+            }
+            
+            /* Stack buttons vertically on mobile */
+            .delete-btn, .reply-btn {
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
+            
+            /* Better input fields on mobile */
+            input[type="text"], textarea {
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+            
+            /* Improve accordion content scrollability on mobile */
+            .accordion-content.open {
+                max-height: 80vh;
+            }
+            
+            .info-content.open {
+                max-height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+<header>
+    <div class="header-content">
+        <span class="header-icon">
+            <svg class="logo-svg" viewBox="0 0 100 100" width="90" height="90">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#e6c453"/>
+                        <stop offset="100%" style="stop-color:#d4b33a"/>
+                    </linearGradient>
+                    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+                    </filter>
+                    <clipPath id="circleClip">
+                        <circle cx="50" cy="50" r="36"/>
+                    </clipPath>
+                </defs>
+                <!-- Background circle -->
+                <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" filter="url(#logoShadow)"/>
+                <!-- Wheat image centered in circle with clip -->
+                <image href="1.png" x="14" y="14" width="72" height="72" clip-path="url(#circleClip)" preserveAspectRatio="xMidYMid slice"/>
+                <!-- No entry sign - red circle and diagonal line with animation -->
+                <g class="logo-no-entry">
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="#c0392b" stroke-width="4"/>
+                    <line x1="22" y1="68" x2="78" y2="32" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+                </g>
+            </svg>
+        </span>
+        <div class="header-text">
+            <h1>פורום הצליאק החרדי</h1>
+            <p class="subtitle">בית חם לעזרה הדדית, מתכונים מקצועיים ומידע רפואי מהימן</p>
+        </div>
+        <div class="header-controls">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="חיפוש..." oninput="performSearch(this.value)">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <button class="header-btn" id="loginBtn" onclick="openRegisterModal()">
+                <i class="fas fa-user"></i>
+                הירשם / התחבר
+            </button>
+            <div class="user-display" id="userDisplay" style="display: none;">
+                <button class="logout-btn" onclick="logout()">התנתק</button>
+                <i class="fas fa-user-circle"></i>
+                <span>מחובר: <span class="user-name" id="displayUserName"></span></span>
+            </div>
+            <button class="header-btn" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                מצב תצוגה
+            </button>
+        </div>
+    </div>
+</header>
+
+<button class="sidebar-toggle-btn" onclick="toggleSidebar()" title="הצג/הסתר מידע">
+    <i class="fas fa-info-circle"></i>
+</button>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<div class="main-layout sidebar-hidden" id="mainLayout">
+    <aside class="sidebar hidden" id="sidebar">
+        <!-- Recipes Accordion Card -->
+        <div class="sidebar-card">
+            <div class="accordion-header" onclick="toggleBanner(this)">
+                <div class="header-left">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <span>מתכונים מומלצים</span>
+                </div>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    <!-- Recipe 1: Gluten-Free Bread -->
+                    <div class="recipe-card" onclick="toggleRecipe(this)">
+                        <div class="recipe-header">
+                            <div class="recipe-icon">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <h4>לחם ללא גלוטן - רך ואוורירי</h4>
+                        </div>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 90 דקות</span>
+                            <span><i class="fas fa-fire"></i> בינוני</span>
+                            <span><i class="fas fa-users"></i> כיכר אחת</span>
+                        </div>
+                        <p class="recipe-desc">לחם ביתי מושלם עם קרום פריך ופנים רך ואוורירי. מתאים לשבת ולכל יום.</p>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-list"></i> מרכיבים</h5>
+                                <ul>
+                                    <li>2 כוסות קמח ללא גלוטן (תערובת אורז וטפיוקה)</li>
+                                    <li>1 כף שמרים יבשים</li>
+                                    <li>1 כפית מלח</li>
+                                    <li>1 כף סוכר</li>
+                                    <li>1 כפית גומי גואר או קסנטן</li>
+                                    <li>2 ביצים גדולות בטמפרטורת החדר</li>
+                                    <li>1/4 כוס שמן זית</li>
+                                    <li>1 כוס מים פושרים (כ-40 מעלות)</li>
+                                    <li>1 כף חומץ תפוחים</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-tasks"></i> אופן ההכנה</h5>
+                                <ol>
+                                    <li>המיסו את השמרים במים הפושרים עם הסוכר והמתינו 10 דקות עד שמבעבע.</li>
+                                    <li>בקערה גדולה, ערבבו את הקמח, המלח והגומי.</li>
+                                    <li>הוסיפו את הביצים, השמן, החומץ ותערובת השמרים וערבבו היטב עם מיקסר כ-3 דקות.</li>
+                                    <li>העבירו לתבנית לחם משומנת וכסו בניילון. תנו לתפוח שעה בטמפרטורת החדר.</li>
+                                    <li>חממו תנור ל-190 מעלות ואפו 45-50 דקות עד שהלחם מוזהב.</li>
+                                    <li>הוציאו מהתנור והניחו להתקרר לפחות 20 דקות לפני החיתוך.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe 2: Chocolate Cake -->
+                    <div class="recipe-card" onclick="toggleRecipe(this)">
+                        <div class="recipe-header">
+                            <div class="recipe-icon">
+                                <i class="fas fa-cake-candles"></i>
+                            </div>
+                            <h4>עוגת שוקולד בלגית עשירה</h4>
+                        </div>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 60 דקות</span>
+                            <span><i class="fas fa-fire"></i> קל</span>
+                            <span><i class="fas fa-users"></i> 12 מנות</span>
+                        </div>
+                        <p class="recipe-desc">עוגת שוקולד עשירה ולחה במיוחד, נמסה בפה. מושלמת לשבתות ואירועים.</p>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-list"></i> מרכיבים</h5>
+                                <ul>
+                                    <li>200 גרם שוקולד מריר ללא גלוטן (לפחות 70%)</li>
+                                    <li>150 גרם חמאה בטמפרטורת החדר</li>
+                                    <li>1 כוס סוכר</li>
+                                    <li>4 ביצים גדולות</li>
+                                    <li>1/2 כוס קמח שקדים טחון דק</li>
+                                    <li>1/4 כוס קקאו הולנדי איכותי</li>
+                                    <li>1/2 כפית אבקת אפייה</li>
+                                    <li>קורט מלח</li>
+                                    <li>1 כפית תמצית וניל טהורה</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-tasks"></i> אופן ההכנה</h5>
+                                <ol>
+                                    <li>חממו תנור ל-170 מעלות. שמנו תבנית עגולה קוטר 24 ס"מ.</li>
+                                    <li>המיסו את השוקולד עם החמאה במיקרוגל במשך 2 דקות, ערבבו עד חלק.</li>
+                                    <li>הוסיפו את הסוכר וערבבו היטב. הכניסו ביצה אחת בכל פעם.</li>
+                                    <li>הוסיפו את קמח השקדים, הקקאו, אבקת האפייה, המלח והוניל.</li>
+                                    <li>ערבבו בעדינות עד לקבלת בלילה חלקה והעבירו לתבנית.</li>
+                                    <li>אפו 35-40 דקות. העוגה תהיה לחה מעט במרכז - זה תקין!</li>
+                                    <li>צננו לחלוטין לפני ההגשה. ניתן לקשט עם אבקת סוכר.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe 3: Pizza -->
+                    <div class="recipe-card" onclick="toggleRecipe(this)">
+                        <div class="recipe-header">
+                            <div class="recipe-icon">
+                                <i class="fas fa-pizza-slice"></i>
+                            </div>
+                            <h4>פיצה ביתית איטלקית אמיתית</h4>
+                        </div>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 45 דקות</span>
+                            <span><i class="fas fa-fire"></i> בינוני</span>
+                            <span><i class="fas fa-users"></i> 2 פיצות</span>
+                        </div>
+                        <p class="recipe-desc">בצק פיצה גמיש ופריך עם רוטב עגבניות ביתי וגבינה נמשכת.</p>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-list"></i> מרכיבים לבצק</h5>
+                                <ul>
+                                    <li>2 כוסות קמח ללא גלוטן לאפייה</li>
+                                    <li>1 כפית שמרים יבשים</li>
+                                    <li>1 כפית סוכר</li>
+                                    <li>1/2 כפית מלח</li>
+                                    <li>1 כפית גומי קסנטן</li>
+                                    <li>1 כוס מים פושרים</li>
+                                    <li>2 כפות שמן זית</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-list"></i> מרכיבים לרוטב</h5>
+                                <ul>
+                                    <li>1 פחית רסק עגבניות (400 גרם)</li>
+                                    <li>2 שיני שום כתושות</li>
+                                    <li>1 כפית אורגנו יבש</li>
+                                    <li>1/2 כפית בזיליקום יבש</li>
+                                    <li>מלח ופלפל לפי הטעם</li>
+                                    <li>1 כף שמן זית</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-tasks"></i> אופן ההכנה</h5>
+                                <ol>
+                                    <li>המיסו שמרים בחלק מהמים עם הסוכר. המתינו 5 דקות.</li>
+                                    <li>ערבבו את המרכיבים היבשים בקערה גדולה.</li>
+                                    <li>הוסיפו את תערובת השמרים, שאר המים והשמן. לשו 3 דקות.</li>
+                                    <li>חלקו לשתי כדורים ופרשו על נייר אפייה.</li>
+                                    <li>לרוטב: ערבבו את כל המרכיבים במחבת על אש נמוכה 10 דקות.</li>
+                                    <li>מרחו רוטב על הבצק, הוסיפו מוצרלה ותוספות לבחירה.</li>
+                                    <li>אפו בתנור ב-220 מעלות למשך 15-20 דקות.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe 4: Cookies -->
+                    <div class="recipe-card" onclick="toggleRecipe(this)">
+                        <div class="recipe-header">
+                            <div class="recipe-icon">
+                                <i class="fas fa-cookie"></i>
+                            </div>
+                            <h4>עוגיות שקדים פריכות</h4>
+                        </div>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 דקות</span>
+                            <span><i class="fas fa-fire"></i> קל מאוד</span>
+                            <span><i class="fas fa-users"></i> כ-24 עוגיות</span>
+                        </div>
+                        <p class="recipe-desc">עוגיות פריכות ומתפוררות עם טעם שקדים עדין. מושלמות לאירוח.</p>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-list"></i> מרכיבים</h5>
+                                <ul>
+                                    <li>2 כוסות קמח שקדים טחון דק</li>
+                                    <li>1/2 כוס סוכר דק</li>
+                                    <li>1/4 כפית מלח</li>
+                                    <li>1/2 כפית תמצית שקדים (או וניל)</li>
+                                    <li>1 ביצה גדולה</li>
+                                    <li>2 כפות חמאה מומסת</li>
+                                    <li>שקדים קלויים לקישוט</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h5><i class="fas fa-tasks"></i> אופן ההכנה</h5>
+                                <ol>
+                                    <li>חממו תנור ל-175 מעלות וצפו תבנית בנייר אפייה.</li>
+                                    <li>ערבבו את קמח השקדים, הסוכר והמלח בקערה.</li>
+                                    <li>הוסיפו את הביצה, החמאה ותמצית השקדים וערבבו היטב.</li>
+                                    <li>צרו כדורים קטנים ושטחו מעט. הניחו על התבנית.</li>
+                                    <li>לחצו שקד קלוי במרכז כל עוגייה.</li>
+                                    <li>אפו 12-15 דקות עד שהקצוות מוזהבים.</li>
+                                    <li>העוגיות יתקשו בהתקררות. שמרו במיכל אטום.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medical Information Accordion Card -->
+        <div class="sidebar-card">
+            <div class="accordion-header" onclick="toggleBanner(this)">
+                <div class="header-left">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <span>למתחילים</span>
+                </div>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    <h3>מידע רפואי על צליאק🌐 המדריך המורחב: צליאק ורגישות לגלוטן – מבט לעומק</h3>
+                    <p>המעבר לאורח חיים ללא גלוטן הוא צעד משמעותי לבריאות הגוף והנפש. כדי להבין את המשמעות המלאה, ריכזנו עבורכם מידע מעמיק, נתונים עדכניים וכלים לניהול נכון של המחלה.</p>
+                    
+                    <h4>📊 צליאק במספרים: הסטטיסטיקה העולמית והמקומית</h4>
+                    <p>הבנת המספרים עוזרת להבין שזו אינה "מחלה של בודדים", אלא תופעה רחבה עם קהילה עצומה:</p>
+                    <ul>
+                        <li><strong>שכיחות גלובלית:</strong> כ-1% מאוכלוסיית העולם סובלת מצליאק. במדינות מסוימות (כמו פינלנד או אירלנד), השכיחות מגיעה אף ל-2% עד 3%.</li>
+                        <li><strong>הגורם הגנטי:</strong> צליאק היא מחלה עם רקע גנטי חזק. אם יש בן משפחה מדרגה ראשונה עם צליאק, הסיכוי של קרוב משפחה לחלות עולה לכ-10%.</li>
+                        <li><strong>יחס אבחון:</strong> מחקרים מראים כי על כל חולה מאובחן, ישנם כ-3 עד 5 חולים שאינם מאובחנים (Undiagnosed). בישראל, בזכות המודעות הגבוהה, הפער הזה הולך ומצטמצם.</li>
+                        <li><strong>גיל האבחון:</strong> בעבר חשבו שזו מחלת ילדים בלבד, אך כיום יותר מ-50% מהמאובחנים הם מבוגרים. ניתן לאבחן צליאק בכל גיל.</li>
+                    </ul>
+
+                    <h4>🧪 מה ההבדל בין צליאק לרגישות לגלוטן?</h4>
+                    <p>חשוב להבחין בין שני מצבים שונים הדורשים הימנעות מגלוטן:</p>
+                    <ul>
+                        <li><strong>צליאק (Celiac Disease):</strong> תגובה חיסונית שגורמת נזק פיזי למעי. כאן ההקפדה חייבת להיות מקסימלית (אפילו פירור אחד מזיק).</li>
+                        <li><strong>רגישות לגלוטן (NCGS):</strong> אנשים שסובלים מתסמינים דומים לצליאק (כאבי בטן, ערפול מוחי, עייפות) אך ללא הנזק למעי וללא הנוגדנים בדם. עבורם, ההימנעות נועדה לשיפור ההרגשה האישית.</li>
+                    </ul>
+
+                    <h4>🛡️ מה זה "זיהום משני" (Cross-Contamination)?</h4>
+                    <p>עבור חולי צליאק, לא מספיק שהמנה עצמה לא תכיל גלוטן, היא צריכה להיות "נקייה" ממגע.</p>
+                    <ul>
+                        <li><strong>במטבח הביתי:</strong> מומלץ להחזיק קרש חיתוך נפרד, מצנם (טוסטר) נפרד, ולנקות היטב משטחי עבודה.</li>
+                        <li><strong>סימון מוצרים:</strong> בישראל קיימת חובת סימון. חפשו את הכיתוב "ללא גלוטן" (מתחת ל-20 PPM - חלקים למיליון).</li>
+                        <li><strong>הכיתוב "עלול להכיל":</strong> מוצרים אלו יוצרו בסביבה שיש בה גלוטן. חולי צליאק מחמירים בדרך כלל נמנעים גם מהם כדי לשמור על המעי נקי לחלוטין.</li>
+                    </ul>
+
+                    <h4>🍎 תזונה ובריאות: מה מעבר לתחליפים?</h4>
+                    <p>החיים ללא גלוטן הם הזדמנות לשדרג את התזונה בבית. מעבר למוצרים המעובדים (לחמים ופסטות), כדאי להכיר את "כוכבי התזונה" הטבעיים:</p>
+                    <ul>
+                        <li><strong>דגנים ללא גלוטן:</strong> דוחן, טפיוקה, אמרנט, טף (הבסיס של הלחם האתיופי - עשיר בברזל), ואורז פרא.</li>
+                        <li><strong>קטניות:</strong> עדשים מכל הצבעים, חומוס ושעועית הם מקור מצוין לחלבון וסיבים תזונתיים שחשובים מאוד לצליאקים.</li>
+                        <li><strong>שיבולת שועל:</strong> ישנה שיבולת שועל מיוחדת שמגודלת בשדות נקיים מגלוטן ומסומנת כ"ללא גלוטן". היא פתרון נהדר לשובע ולאנרגיה.</li>
+                    </ul>
+
+                    <h4>🏠 הבית ללא גלוטן – טיפים פרקטיים</h4>
+                    <ul>
+                        <li><strong>סדר בארונות:</strong> כדאי להקצות מדף עליון למוצרים ללא גלוטן (כדי שפירורי לחם רגיל לא יפלו עליהם).</li>
+                        <li><strong>תבלינים:</strong> שימו לב שגם בתבלינים טהורים לפעמים מוסיפים קמח למניעת התגיישות. קנו רק תבלינים מאושרים.</li>
+                        <li><strong>כלים משותפים:</strong> כפות עץ וכלים עם חריצים קשים לניקוי יסודי מגלוטן, לכן עדיף שיהיו כלים נפרדים או כלי סיליקון ומתכת שמתנקים בקלות.</li>
+                    </ul>
+
+                    <h4>❤️ המסקנה: איכות חיים גבוהה יותר</h4>
+                    <p>רבים מעידים שלאחר האבחון והפסקת הגלוטן, הם גילו "אני חדש":</p>
+                    <ul>
+                        <li>הריכוז עולה והעייפות נעלמת.</li>
+                        <li>הגוף מקבל את כל המינרלים שהיו חסרים לו.</li>
+                        <li>התזונה הופכת למגוונת ומעניינת יותר.</li>
+                    </ul>
+                    <p><strong>צליאק הוא לא מגבלה, הוא פשוט דרך חיים חדשה ובריאה יותר.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Card -->
+        <div class="sidebar-card">
+            <div class="accordion-header" onclick="toggleBanner(this)">
+                <div class="header-left">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <span>קישורים וכתובות שימושיות</span>
+                </div>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    <div class="info-accordion">
+                        <div class="info-header" onclick="toggleInfo(this)">
+                            <div class="info-left">
+                                <div class="info-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h4>אתרים מומלצים</h4>
+                            </div>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="info-content">
+                            <div class="info-inner">
+                                <ul>
+                                    <li><a href="https://www.celiac.org.il" target="_blank" style="color: var(--primary); text-decoration: none;">עמותת צליאק ישראל</a> - האתר הרשמי של העמותה</li>
+                                    <li><a href="https://www.health.gov.il" target="_blank" style="color: var(--primary); text-decoration: none;">משרד הבריאות</a> - מידע רפואי רשמי על צליאק</li>
+                                    <li><a href="https://www.clalit.co.il" target="_blank" style="color: var(--primary); text-decoration: none;">כללית שירותי בריאות</a> - מאמרים על צליאק ותזונה</li>
+                                    <li><a href="https://www.maccabi4u.co.il" target="_blank" style="color: var(--primary); text-decoration: none;">מכבי שירותי בריאות</a> - מידע לחולי צליאק</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-accordion">
+                        <div class="info-header" onclick="toggleInfo(this)">
+                            <div class="info-left">
+                                <div class="info-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h4>חנויות ורשתות מזון</h4>
+                            </div>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="info-content">
+                            <div class="info-inner">
+                                <ul>
+                                    <li><a href="https://www.shufersal.co.il" target="_blank" style="color: var(--primary); text-decoration: none;">שופרסל</a> - מוצרים ללא גלוטן במגוון סניפים</li>
+                                    <li><a href="https://www.rami-levy.co.il" target="_blank" style="color: var(--primary); text-decoration: none;">רמי לוי</a> - מגוון מוצרים ללא גלוטן</li>
+                                    <li><a href="https://www.tivall.co.il" target="_blank" style="color: var(--primary); text-decoration: none;">תיבל</a> - מוצרי מזון צמחוניים וללא גלוטן</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-accordion">
+                        <div class="info-header" onclick="toggleInfo(this)">
+                            <div class="info-left">
+                                <div class="info-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>קהילות ותמיכה</h4>
+                            </div>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="info-content">
+                            <div class="info-inner">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/groups/celiacisrael" target="_blank" style="color: var(--primary); text-decoration: none;">קבוצת צליאק ישראל בפייסבוק</a></li>
+                                    <li><a href="https://www.camoni.co.il" target="_blank" style="color: var(--primary); text-decoration: none;">כמוני</a> - קהילה לאנשים עם מגבלות תזונה</li>
+                                    <li>עמותת צליאק ישראל - קו חם: 03-5254253</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-accordion">
+                        <div class="info-header" onclick="toggleInfo(this)">
+                            <div class="info-left">
+                                <div class="info-icon">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                                <h4>מרפאות ובתי חולים</h4>
+                            </div>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </div>
+                        <div class="info-content">
+                            <div class="info-inner">
+                                <ul>
+                                    <li>בי"ח שיבא - מרכז גסטרו ילדים - טל: 03-5302234</li>
+                                    <li>בי"ח רמב"ם - מחלקת גסטרו - טל: 04-7772444</li>
+                                    <li>מרכז רפואי הדסה - טל: 02-6776543</li>
+                                    <li>בי"ח בילינסון - מכון גסטרו - טל: 03-9377222</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Rules Card -->
+        <div class="sidebar-card">
+            <div class="accordion-header" onclick="toggleBanner(this)">
+                <div class="header-left">
+                    <div class="icon-wrapper" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <span>כללים ומטרת האתר</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+                <div class="info-accordion">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        <div class="info-left">
+                            <div class="info-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h4>כללי האתר</h4>
+                        </div>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-inner">
+                            <h5 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.8rem;">כללי יסוד:</h5>
+                            <ul class="styled-rules-list">
+                                <li>שמירה על כבוד הזולת ולשון נקייה בכל עת</li>
+                                <li>איסור מוחלט על לשון הרע, רכילות והוצאת דיבה</li>
+                                <li>איסור על פרסום תוכן פוגעני, מעליב או בלתי הולם</li>
+                                <li>כל התכנים חייבים להיות ענייניים ורלוונטיים לנושא הצליאק</li>
+                            </ul>
+                            
+                            <h5 style="color: var(--primary); margin-top: 1.5rem; margin-bottom: 0.8rem;">כללי פרסום:</h5>
+                            <ul class="styled-rules-list">
+                                <li>איסור על פרסום מוצרים מסחריים ללא אישור המנהלים</li>
+                                <li>שמירה על טון מכבד ואדיב גם במחלוקות</li>
+                                <li>ביקורות לתוכן ולא לאדם</li>
+                                <li>הימנעות מוויכוחים מיותרים</li>
+                            </ul>
+                            
+                            <h5 style="color: var(--primary); margin-top: 1.5rem; margin-bottom: 0.8rem;">אכיפה:</h5>
+                            <ul class="styled-rules-list">
+                                <li>המנהלים שומרים לעצמם את הזכות למחוק או לערוך תכנים לא הולמים</li>
+                                <li>משתמש שיפר את הכללים עלול להימחק מהפורום</li>
+                                <li>ההחלטות הסופיות בידי צוות המנהלים</li>
+                            </ul>
+                            
+                            <h5 style="color: var(--error); margin-top: 1.5rem; margin-bottom: 0.8rem;">אחריות רפואית:</h5>
+                            <ul class="styled-rules-list">
+                                <li><strong>אין כל אחריות על מידע רפואי המתפרסם בפורום</strong></li>
+                                <li>המידע באתר הוא לצרכי מידע כללי בלבד ואינו תחליף לייעוץ רפואי מקצועי</li>
+                                <li>יש להתייעץ עם רופא או גורם רפואי מוסמך בכל נושא רפואי</li>
+                                <li>הפורום אינו נושא באחריות לכל נזק שיגרם כתוצאה משימוש במידע המפורסם כאן</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-accordion">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        <div class="info-left">
+                            <div class="info-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4>מטרת האתר</h4>
+                        </div>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-inner">
+                            <ul class="styled-rules-list">
+                                <li>מרכז מידע עדכני ומהימן על צליאק</li>
+                                <li>שיתוף מתכונים מותאמים למטבח החרדי</li>
+                                <li>מידע על מוצרים כשרים ללא גלוטן</li>
+                                <li>טיפים מעשיים להתמודדות יומיומית ועוד</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-accordion">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        <div class="info-left">
+                            <div class="info-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>שיתוף ידע</h4>
+                        </div>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-inner">
+                            <ul class="styled-rules-list">
+                                <li>למידה מניסיון של אחרים</li>
+                                <li>פתרונות יצירתיים לאתגרים שבחיי היומיום</li>
+                                <li>המלצות על מקומות אוכל, חנויות ושירותים</li>
+                                <li>עזרה בניווט במערכות בריאות וביטוח</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-accordion">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        <div class="info-left">
+                            <div class="info-icon">
+                                <i class="fas fa-star-of-david"></i>
+                            </div>
+                            <h4>שמירה על זהות</h4>
+                        </div>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-inner">
+                            <ul class="styled-rules-list">
+                                <li>שילוב ערכי היהדות החרדית</li>
+                                <li>התאמה למציאות הייחודית של החברה החרדית</li>
+                                <li>כיבוד הלכות כשרות ומנהגים</li>
+                                <li>שפה ותוכן הולמים את הקהל</li>
+                            </ul>
+                            <p style="margin-top: 1.5rem; font-weight: 600; color: var(--primary); text-align: center;">
+                                בברכת בריאות ושמחה<br>
+                                צוות פורום הצליאק החרדי
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Card -->
+        <div class="sidebar-card">
+            <div class="accordion-header contact-card-header" onclick="openContactModal()">
+                <div class="header-left">
+                    <div class="icon-wrapper" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>יצירת קשר</span>
+                </div>
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </div>
+    </aside>
+
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="changeCategory('הכל', this)">
+                <span class="tab-icon"><i class="fas fa-home"></i></span> הכל
+            </button>
+            <button class="tab-btn" onclick="changeCategory('מתכונים', this)">
+                <span class="tab-icon"><i class="fas fa-utensils"></i></span> מתכונים
+            </button>
+            <button class="tab-btn" onclick="changeCategory('כשרות', this)">
+                <span class="tab-icon"><i class="fas fa-star-of-david"></i></span> כשרות
+            </button>
+            <button class="tab-btn" onclick="changeCategory('רפואי', this)">
+                <span class="tab-icon"><i class="fas fa-heartbeat"></i></span> רפואי
+            </button>
+            <button class="tab-btn" onclick="changeCategory('מסעדות', this)">
+                <span class="tab-icon"><i class="fas fa-store"></i></span> מסעדות
+            </button>
+            <button class="tab-btn" onclick="changeCategory('תזונה', this)">
+                <span class="tab-icon"><i class="fas fa-apple-whole"></i></span> תזונה
+            </button>
+            <button class="tab-btn" onclick="changeCategory('צרכנות', this)">
+                <span class="tab-icon"><i class="fas fa-shopping-cart"></i></span> צרכנות
+            </button>
+            <button class="tab-btn" onclick="changeCategory('כללי', this)">
+                <span class="tab-icon"><i class="fas fa-comments"></i></span> שאלות כלליות
+            </button>
+        </div>
+
+        <div id="posts-container">
+            <div style="text-align: center; padding: 50px;"><i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--accent);"></i><p style="margin-top: 15px;">טוען הודעות...</p></div>
+        </div>
+    </div>
+</div>
+
+<button class="fab" onclick="openPostModal()">
+    <i class="fas fa-plus"></i>
+</button>
+
+<div id="postModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close-btn" onclick="document.getElementById('postModal').style.display='none'">
+            <i class="fas fa-times"></i>
+        </button>
+        <h2><i class="fas fa-pen-to-square"></i> פתיחת שרשור חדש</h2>
+        <input type="text" id="name" placeholder="השם שלך">
+        <select id="category">
+            <option value="כללי">בחר קטגוריה</option>
+            <option value="מתכונים">מתכונים</option>
+            <option value="כשרות">כשרות ומסעדות</option>
+            <option value="רפואי">שאלות רפואיות</option>
+            <option value="מסעדות">מסעדות</option>
+            <option value="תזונה">תזונה</option>
+            <option value="צרכנות">צרכנות</option>
+            <option value="כללי">שאלות כלליות</option>
+        </select>
+        <input type="text" id="subject" placeholder="נושא ההודעה">
+        <textarea id="content" rows="5" placeholder="תוכן ההודעה..."></textarea>
+        <button class="btn-main" id="sendPostBtn" onclick="sendPost()"><i class="fas fa-paper-plane"></i> פרסם עכשיו</button>
+    </div>
+</div>
+
+<div id="nameModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close-btn" onclick="closeNameModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <h2><i class="fas fa-user-edit"></i> השם שיפורסם בתגובה</h2>
+        <input type="text" id="replyNameInput" placeholder="הכנס את שמך כאן...">
+        <button class="btn-main" id="nameModalConfirm"><i class="fas fa-check"></i> אישור</button>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close-btn" onclick="closeRegisterModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="register" onclick="switchAuthTab('register')">הרשמה</button>
+            <button class="auth-tab" data-tab="login" onclick="switchAuthTab('login')">התחברות</button>
+        </div>
+        
+        <!-- Registration Form -->
+        <div id="registerForm" class="auth-form active">
+            <input type="text" id="registerUsername" placeholder="שם משתמש (חובה)" required>
+            <input type="email" id="registerEmail" placeholder="אימייל (חובה)" required>
+            <input type="password" id="registerPassword" placeholder="סיסמה (חובה)" required>
+            
+            <div class="terms-checkbox-container" onclick="toggleTermsCheckbox()">
+                <div class="terms-checkbox" id="termsCheckbox">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="terms-text">
+                    אני מסכים/ה לקבל את <span class="terms-link" onclick="event.stopPropagation(); openTermsModal();">כללי השימוש</span> של האתר ולפעול על פיהם
+                </div>
+            </div>
+            
+            <button class="btn-main" id="registerButton" onclick="registerUser()" disabled>
+                <i class="fas fa-user-plus"></i> הירשם
+            </button>
+        </div>
+        
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-form">
+            <input type="email" id="loginEmail" placeholder="אימייל" required>
+            <input type="password" id="loginPassword" placeholder="סיסמה" required>
+            <button class="btn-main" onclick="loginUser()">
+                <i class="fas fa-sign-in-alt"></i> התחבר
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close-btn" onclick="closeContactModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <h2><i class="fas fa-envelope"></i> יצירת קשר</h2>
+        <p style="margin-bottom: 15px; color: var(--text-muted); text-align: center;">שלחו לנו הודעה ונחזור אליכם בהקדם</p>
+        
+        <!-- Form for guests (not logged in) -->
+        <div id="contactFormGuest">
+            <input type="text" id="contactName" placeholder="השם שלך (חובה)">
+            <input type="email" id="contactEmail" placeholder="כתובת אימייל (חובה)">
+            <textarea id="contactMessage" rows="5" placeholder="תוכן ההודעה..."></textarea>
+            <button class="btn-main" id="sendContactBtn" onclick="sendContactForm()">
+                <i class="fas fa-paper-plane"></i> שלח הודעה
+            </button>
+        </div>
+        
+        <!-- Form for logged-in users -->
+        <div id="contactFormUser" style="display: none;">
+            <div style="background: var(--info); border: 1px solid var(--info-border); border-radius: 10px; padding: 12px; margin-bottom: 15px; text-align: center;">
+                <i class="fas fa-user-circle" style="color: var(--primary);"></i>
+                <span style="margin-right: 8px;">שולח כ: <strong id="contactUserName"></strong></span>
+            </div>
+            <textarea id="contactMessageUser" rows="5" placeholder="תוכן ההודעה..."></textarea>
+            <button class="btn-main" id="sendContactBtnUser" onclick="sendContactForm()">
+                <i class="fas fa-paper-plane"></i> שלח הודעה
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Terms of Use Modal -->
+<div id="termsModal" class="modal">
+    <div class="modal-content terms-modal-content">
+        <button class="modal-close-btn" onclick="closeTermsModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <h2 style="text-align: center; color: var(--primary); margin-bottom: 1.5rem;">
+            <i class="fas fa-gavel"></i> כללי השימוש באתר
+        </h2>
+        
+        <div class="terms-modal-body">
+            <div class="terms-section">
+                <h3><i class="fas fa-shield-alt"></i> כללי יסוד</h3>
+                <ul class="styled-rules-list">
+                    <li>שמירה על כבוד הזולת ולשון נקייה בכל עת</li>
+                    <li>איסור מוחלט על לשון הרע, רכילות והוצאת דיבה</li>
+                    <li>איסור על פרסום תוכן פוגעני, מעליב או בלתי הולם</li>
+                    <li>כל התכנים חייבים להיות ענייניים ורלוונטיים לנושא הצליאק</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h3><i class="fas fa-bullhorn"></i> כללי פרסום</h3>
+                <ul class="styled-rules-list">
+                    <li>איסור על פרסום מוצרים מסחריים ללא אישור המנהלים</li>
+                    <li>שמירה על טון מכבד ואדיב גם במחלוקות</li>
+                    <li>ביקורות לתוכן ולא לאדם</li>
+                    <li>הימנעות מוויכוחים מיותרים</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h3><i class="fas fa-gavel"></i> אכיפה</h3>
+                <ul class="styled-rules-list">
+                    <li>המנהלים שומרים לעצמם את הזכות למחוק או לערוך תכנים לא הולמים</li>
+                    <li>משתמש שיפר את הכללים עלול להימחק מהפורום</li>
+                    <li>ההחלטות הסופיות בידי צוות המנהלים</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h3 style="color: var(--error);"><i class="fas fa-exclamation-triangle"></i> אחריות רפואית</h3>
+                <ul class="styled-rules-list">
+                    <li><strong>אין כל אחריות על מידע רפואי המתפרסם בפורום</strong></li>
+                    <li>המידע באתר הוא לצרכי מידע כללי בלבד ואינו תחליף לייעוץ רפואי מקצועי</li>
+                    <li>יש להתייעץ עם רופא או גורם רפואי מוסמך בכל נושא רפואי</li>
+                    <li>הפורום אינו נושא באחריות לכל נזק שיגרם כתוצאה משימוש במידע המפורסם כאן</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h3><i class="fas fa-bullseye"></i> מטרת האתר</h3>
+                <ul class="styled-rules-list">
+                    <li>מרכז מידע עדכני ומהימן על צליאק</li>
+                    <li>שיתוף מתכונים מותאמים למטבח החרדי</li>
+                    <li>מידע על מוצרים כשרים ללא גלוטן</li>
+                    <li>טיפים מעשיים להתמודדות יומיומית ועוד</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h3><i class="fas fa-handshake"></i> שיתוף ידע</h3>
+                <ul class="styled-rules-list">
+                    <li>למידה מניסיון של אחרים</li>
+                    <li>פתרונות יצירתיים לאתגרים שבחיי היומיום</li>
+                    <li>המלצות על מקומות אוכל, חנויות ושירותים</li>
+                    <li>עזרה בניווט במערכות בריאות וביטוח</li>
+                </ul>
+            </div>
+            
+            <div class="terms-section">
+                <h3><i class="fas fa-star-of-david"></i> שמירה על זהות</h3>
+                <ul class="styled-rules-list">
+                    <li>שילוב ערכי היהדות החרדית</li>
+                    <li>התאמה למציאות הייחודית של החברה החרדית</li>
+                    <li>כיבוד הלכות כשרות ומנהגים</li>
+                    <li>שפה ותוכן הולמים את הקהל</li>
+                </ul>
+            </div>
+            
+            <div class="terms-footer">
+                <p>בברכת בריאות ושמחה</p>
+                <p><strong>צוות פורום הצליאק החרדי</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="toastContainer"></div>
+
+<script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyBATnvolu0q0dsI8O8v4KgsgrIZHnz1UdqnOyCMOdyMrBLgJr8APlgUZNGCkyQCos9/exec";
+    let allPosts = [];
+    let currentSearchTerm = '';
+    let nameModalCallback = null;
+
+    // User authentication functions
+    function updateUserDisplay() {
+        const currentUser = localStorage.getItem('currentUser');
+        const loginBtn = document.getElementById('loginBtn');
+        const userDisplay = document.getElementById('userDisplay');
+        
+        if (currentUser) {
+            loginBtn.style.display = 'none';
+            userDisplay.style.display = 'flex';
+            userDisplay.querySelector('.user-name').textContent = currentUser;
+        } else {
+            loginBtn.style.display = 'flex';
+            userDisplay.style.display = 'none';
+        }
+    }
+
+    function openRegisterModal() {
+        document.getElementById('registerModal').style.display = 'flex';
+    }
+
+    function closeRegisterModal() {
+        document.getElementById('registerModal').style.display = 'none';
+    }
+
+    function switchAuthTab(tab) {
+        const registerTab = document.querySelector('.auth-tab[data-tab="register"]');
+        const loginTab = document.querySelector('.auth-tab[data-tab="login"]');
+        const registerForm = document.getElementById('registerForm');
+        const loginForm = document.getElementById('loginForm');
+        
+        if (tab === 'register') {
+            registerTab.classList.add('active');
+            loginTab.classList.remove('active');
+            registerForm.classList.add('active');
+            loginForm.classList.remove('active');
+        } else {
+            loginTab.classList.add('active');
+            registerTab.classList.remove('active');
+            loginForm.classList.add('active');
+            registerForm.classList.remove('active');
+        }
+    }
+    
+    function toggleTermsCheckbox() {
+        const checkbox = document.getElementById('termsCheckbox');
+        const registerButton = document.getElementById('registerButton');
+        
+        checkbox.classList.toggle('checked');
+        
+        // Enable or disable register button based on checkbox state
+        if (checkbox.classList.contains('checked')) {
+            registerButton.disabled = false;
+        } else {
+            registerButton.disabled = true;
+        }
+    }
+
+    async function loginUser() {
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value;
+        
+        if (!email) {
+            showToast('יש להזין אימייל');
+            return;
+        }
+        
+        if (!password) {
+            showToast('יש להזין סיסמה');
+            return;
+        }
+        
+        try {
+            // Get stored user credentials from localStorage
+            // Note: This is a client-side workaround since the backend doesn't support password-based login.
+            // In a production environment, proper authentication should be implemented on the server side.
+            const storedUsers = JSON.parse(localStorage.getItem('registeredUsers') || '{}');
+            const userKey = email.toLowerCase();
+            
+            if (!storedUsers[userKey]) {
+                showToast('משתמש לא נמצא. אנא הירשם תחילה.');
+                return;
+            }
+            
+            // Verify password matches stored password
+            if (storedUsers[userKey].password !== password) {
+                showToast('סיסמה שגויה');
+                return;
+            }
+            
+            // Verify user exists in backend
+            const response = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: JSON.stringify({
+                    action: 'checkUser',
+                    username: storedUsers[userKey].username
+                })
+            });
+            
+            const result = await response.json();
+            
+            if (result.status === 'success' && result.exists) {
+                localStorage.setItem('currentUser', storedUsers[userKey].username);
+                localStorage.setItem('userEmail', email);
+                showToast('התחברת בהצלחה!');
+                updateUserDisplay();
+                closeRegisterModal();
+            } else {
+                showToast('משתמש לא נמצא במערכת');
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+            showToast('שגיאה בהתחברות. נסה שנית.');
+        }
+    }
+
+    async function registerUser() {
+        const username = document.getElementById('registerUsername').value.trim();
+        const email = document.getElementById('registerEmail').value.trim();
+        const password = document.getElementById('registerPassword').value;
+        
+        if (!username) {
+            showToast('יש להזין שם משתמש');
+            return;
+        }
+        
+        if (!email) {
+            showToast('יש להזין אימייל');
+            return;
+        }
+        
+        if (!password) {
+            showToast('יש להזין סיסמה');
+            return;
+        }
+        
+        try {
+            // שליחה ל-Google Apps Script
+            const response = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: JSON.stringify({
+                    action: 'register',
+                    username: username,
+                    email: email,
+                    password: password
+                })
+            });
+            
+            const result = await response.json();
+            
+            if (result.status === 'success' || result.success) {
+                // Save credentials locally for login
+                // Note: This is a workaround since the backend doesn't support password storage.
+                // In a production environment, proper authentication should be implemented on the server side.
+                const storedUsers = JSON.parse(localStorage.getItem('registeredUsers') || '{}');
+                const userKey = email.toLowerCase();
+                storedUsers[userKey] = {
+                    username: username,
+                    email: email,
+                    password: password
+                };
+                localStorage.setItem('registeredUsers', JSON.stringify(storedUsers));
+                
+                localStorage.setItem('currentUser', username);
+                localStorage.setItem('userEmail', email);
+                showToast(result.message || 'נרשמת בהצלחה!');
+                updateUserDisplay();
+                setTimeout(() => {
+                    closeRegisterModal();
+                }, 2000);
+            } else {
+                showToast(result.message || 'שגיאה בהרשמה');
+            }
+        } catch (error) {
+            console.error('Registration error:', error);
+            showToast('שגיאה בהרשמה. נסה שנית.');
+        }
+    }
+
+    function logout() {
+        localStorage.removeItem('currentUser');
+        localStorage.removeItem('userEmail');
+        updateUserDisplay();
+        showToast('התנתקת בהצלחה');
+    }
+
+    // Contact modal functions
+    function openContactModal() {
+        const currentUser = localStorage.getItem('currentUser');
+        const guestForm = document.getElementById('contactFormGuest');
+        const userForm = document.getElementById('contactFormUser');
+        
+        if (currentUser) {
+            // Show logged-in user form
+            guestForm.style.display = 'none';
+            userForm.style.display = 'block';
+            document.getElementById('contactUserName').textContent = currentUser;
+        } else {
+            // Show guest form
+            guestForm.style.display = 'block';
+            userForm.style.display = 'none';
+        }
+        
+        document.getElementById('contactModal').style.display = 'flex';
+    }
+
+    function closeContactModal() {
+        document.getElementById('contactModal').style.display = 'none';
+        // Clear form fields
+        document.getElementById('contactName').value = '';
+        document.getElementById('contactEmail').value = '';
+        document.getElementById('contactMessage').value = '';
+        document.getElementById('contactMessageUser').value = '';
+    }
+
+    function openTermsModal() {
+        document.getElementById('termsModal').style.display = 'flex';
+    }
+
+    function closeTermsModal() {
+        document.getElementById('termsModal').style.display = 'none';
+    }
+
+    async function sendContactForm() {
+        const currentUser = localStorage.getItem('currentUser');
+        let name, email, message;
+        
+        // Email validation helper
+        function isValidEmail(emailStr) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailStr);
+        }
+        
+        if (currentUser) {
+            // Logged-in user
+            name = currentUser;
+            // Get email from localStorage if stored during registration
+            email = localStorage.getItem('userEmail') || '';
+            message = document.getElementById('contactMessageUser').value.trim();
+            
+            if (!message) {
+                showToast('נא להזין תוכן להודעה');
+                return;
+            }
+            if (message.length > 5000) {
+                showToast('ההודעה ארוכה מדי (מקסימום 5000 תווים)');
+                return;
+            }
+        } else {
+            // Guest user
+            name = document.getElementById('contactName').value.trim();
+            email = document.getElementById('contactEmail').value.trim();
+            message = document.getElementById('contactMessage').value.trim();
+            
+            if (!name) {
+                showToast('נא להזין שם');
+                return;
+            }
+            if (!email) {
+                showToast('נא להזין כתובת אימייל');
+                return;
+            }
+            if (!isValidEmail(email)) {
+                showToast('נא להזין כתובת אימייל תקינה');
+                return;
+            }
+            if (!message) {
+                showToast('נא להזין תוכן להודעה');
+                return;
+            }
+            if (message.length > 5000) {
+                showToast('ההודעה ארוכה מדי (מקסימום 5000 תווים)');
+                return;
+            }
+        }
+        
+        // Disable buttons during submission
+        const guestBtn = document.getElementById('sendContactBtn');
+        const userBtn = document.getElementById('sendContactBtnUser');
+        if (guestBtn) guestBtn.disabled = true;
+        if (userBtn) userBtn.disabled = true;
+        
+        try {
+            const response = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                body: JSON.stringify({
+                    action: 'contact',
+                    name: name,
+                    email: email,
+                    message: message
+                })
+            });
+            
+            const result = await response.json();
+            
+            if (result.status === 'success') {
+                showToast('ההודעה נשלחה בהצלחה!');
+                closeContactModal();
+            } else {
+                showToast(result.message || 'שגיאה בשליחת ההודעה');
+            }
+        } catch (error) {
+            console.error('Contact form error:', error);
+            showToast('שגיאה בשליחת ההודעה. נסה שנית.');
+        } finally {
+            // Re-enable buttons
+            if (guestBtn) guestBtn.disabled = false;
+            if (userBtn) userBtn.disabled = false;
+        }
+    }
+
+    // Show success toast notification
+    function showToast(message) {
+        const container = document.getElementById('toastContainer');
+        const toast = document.createElement('div');
+        toast.className = 'toast-notification';
+        toast.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
+        container.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.classList.add('hide');
+            setTimeout(() => toast.remove(), 400);
+        }, 3000);
+    }
+
+    // Styled name modal instead of prompt
+    function showNameModal() {
+        // If user is logged in, return their name directly
+        const currentUser = localStorage.getItem('currentUser');
+        if (currentUser) {
+            return Promise.resolve(currentUser);
+        }
+        
+        return new Promise((resolve) => {
+            const modal = document.getElementById('nameModal');
+            const input = document.getElementById('replyNameInput');
+            const confirmBtn = document.getElementById('nameModalConfirm');
+            
+            input.value = '';
+            modal.style.display = 'flex';
+            input.focus();
+            
+            const handleConfirm = () => {
+                const name = input.value.trim();
+                modal.style.display = 'none';
+                confirmBtn.removeEventListener('click', handleConfirm);
+                input.removeEventListener('keypress', handleKeypress);
+                resolve(name || null);
+            };
+            
+            const handleKeypress = (e) => {
+                if (e.key === 'Enter') {
+                    handleConfirm();
+                }
+            };
+            
+            confirmBtn.addEventListener('click', handleConfirm);
+            input.addEventListener('keypress', handleKeypress);
+        });
+    }
+
+    function closeNameModal() {
+        document.getElementById('nameModal').style.display = 'none';
+        document.getElementById('replyNameInput').value = '';
+    }
+
+    // Track likes in localStorage
+    function hasLiked(postId) {
+        const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '[]');
+        return likedPosts.includes(postId);
+    }
+
+    function markAsLiked(postId) {
+        const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '[]');
+        if (!likedPosts.includes(postId)) {
+            likedPosts.push(postId);
+            localStorage.setItem('likedPosts', JSON.stringify(likedPosts));
+        }
+    }
+
+    // Check if post/comment can be deleted (within 24 hours)
+    function canDelete(timestamp) {
+        if (!timestamp) return false;
+        const postTime = new Date(timestamp);
+        // Check if date is valid
+        if (isNaN(postTime.getTime())) return false;
+        const now = new Date();
+        const hoursDiff = (now - postTime) / (1000 * 60 * 60);
+        return hoursDiff <= 24;
+    }
+
+    // Track authored posts for delete functionality
+    function markAsAuthored(postId) {
+        const authoredPosts = JSON.parse(localStorage.getItem('authoredPosts') || '[]');
+        if (!authoredPosts.includes(postId)) {
+            authoredPosts.push(postId);
+            localStorage.setItem('authoredPosts', JSON.stringify(authoredPosts));
+        }
+    }
+
+    function isAuthored(postId) {
+        const authoredPosts = JSON.parse(localStorage.getItem('authoredPosts') || '[]');
+        return authoredPosts.includes(postId);
+    }
+
+    // Track pending posts to mark as authored after reload
+    function addPendingAuthored(signature) {
+        const pending = JSON.parse(localStorage.getItem('pendingAuthored') || '[]');
+        pending.push(signature);
+        localStorage.setItem('pendingAuthored', JSON.stringify(pending));
+    }
+
+    function processPendingAuthored(posts) {
+        const pending = JSON.parse(localStorage.getItem('pendingAuthored') || '[]');
+        if (pending.length === 0) return;
+        
+        pending.forEach(sig => {
+            const match = posts.find(p => 
+                p.Name === sig.name && 
+                p.Content === sig.content &&
+                Math.abs(new Date(p.Timestamp) - new Date(sig.timestamp)) < 60000 // within 1 minute
+            );
+            if (match && match.ID) {
+                markAsAuthored(match.ID);
+            }
+        });
+        
+        localStorage.setItem('pendingAuthored', JSON.stringify([]));
+    }
+
+    // Sidebar toggle functionality
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const mainLayout = document.getElementById('mainLayout');
+        const toggleBtn = document.querySelector('.sidebar-toggle-btn i');
+        const overlay = document.getElementById('sidebarOverlay');
+        
+        sidebar.classList.toggle('hidden');
+        mainLayout.classList.toggle('sidebar-hidden');
+        overlay.classList.toggle('visible');
+        
+        // Toggle icon between info and arrow
+        if (sidebar.classList.contains('hidden')) {
+            toggleBtn.className = 'fas fa-info-circle';
+        } else {
+            toggleBtn.className = 'fas fa-chevron-right';
+        }
+    }
+    
+    // Search functionality
+    function performSearch(searchTerm) {
+        currentSearchTerm = searchTerm.toLowerCase().trim();
+        const activeTab = document.querySelector('.tab-btn.active');
+        const hebrewMatch = activeTab ? activeTab.textContent.trim().replace(/[\s\u200B-\u200D\uFEFF]/g, '').match(/[\u0590-\u05FF]+/) : null;
+        const currentCategory = hebrewMatch ? hebrewMatch[0] : 'הכל';
+        render(currentCategory);
+    }
+
+    // Accordion functionality for sidebar cards
+    function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains('open');
+        
+        // Close all accordions in the same card
+        // (optional - remove these lines to allow multiple open)
+        
+        // Toggle this accordion
+        header.classList.toggle('active');
+        content.classList.toggle('open');
+    }
+
+    // Helper function to get or create info modal
+    function getOrCreateInfoModal() {
+        let modal = document.getElementById('infoModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'infoModal';
+            modal.className = 'info-modal';
+            modal.innerHTML = `
+                <div class="info-modal-content">
+                    <button class="info-modal-close" onclick="closeInfoModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="info-modal-header">
+                        <div class="info-icon"></div>
+                        <h2></h2>
+                    </div>
+                    <div class="info-inner"></div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeInfoModal();
+                }
+            });
+        }
+        return modal;
+    }
+
+    // Banner functionality for main category cards
+    function toggleBanner(header) {
+        const content = header.nextElementSibling;
+        const title = header.querySelector('span').textContent;
+        const iconHtml = header.querySelector('.icon-wrapper').innerHTML;
+        
+        const modal = getOrCreateInfoModal();
+        
+        // Populate modal content
+        // First, try to find .accordion-inner (for simple content)
+        let innerContent = content.querySelector('.accordion-inner');
+        
+        // If not found, collect all .info-inner from .info-accordion sections
+        if (!innerContent) {
+            const infoSections = content.querySelectorAll('.info-accordion');
+            if (infoSections.length > 0) {
+                let combinedHtml = '';
+                infoSections.forEach((section, index) => {
+                    const sectionTitle = section.querySelector('h4');
+                    const sectionIcon = section.querySelector('.info-icon');
+                    const sectionContent = section.querySelector('.info-inner');
+                    
+                    if (sectionTitle && sectionContent) {
+                        if (index > 0) {
+                            combinedHtml += '<hr style="margin: 2rem 0; border: none; border-top: 2px solid var(--info-border); opacity: 0.3;">';
+                        }
+                        combinedHtml += `<div style="margin-bottom: 2rem;">`;
+                        if (sectionIcon) {
+                            combinedHtml += `<h3 style="color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">`;
+                            combinedHtml += `<span style="font-size: 1.5rem;">${sectionIcon.innerHTML}</span>`;
+                            combinedHtml += `<span>${sectionTitle.textContent}</span>`;
+                            combinedHtml += `</h3>`;
+                        }
+                        combinedHtml += sectionContent.innerHTML;
+                        combinedHtml += `</div>`;
+                    }
+                });
+                
+                modal.querySelector('.info-icon').innerHTML = iconHtml;
+                modal.querySelector('h2').textContent = title;
+                modal.querySelector('.info-inner').innerHTML = combinedHtml;
+                
+                // Show modal
+                modal.style.display = 'flex';
+                return;
+            }
+            
+            console.error('Content structure is missing .accordion-inner or .info-accordion elements');
+            return;
+        }
+        
+        modal.querySelector('.info-icon').innerHTML = iconHtml;
+        modal.querySelector('h2').textContent = title;
+        modal.querySelector('.info-inner').innerHTML = innerContent.innerHTML;
+        
+        // Show modal
+        modal.style.display = 'flex';
+    }
+
+    // Info section accordion
+    function toggleInfo(header) {
+        // Get the info content from the next sibling
+        const infoContent = header.nextElementSibling;
+        const title = header.querySelector('h4').textContent;
+        const iconHtml = header.querySelector('.info-icon').innerHTML;
+        
+        const modal = getOrCreateInfoModal();
+        
+        // Populate modal content with error handling
+        const innerContent = infoContent.querySelector('.info-inner');
+        if (!innerContent) {
+            console.error('Info content structure is missing .info-inner element');
+            return;
+        }
+        
+        modal.querySelector('.info-icon').innerHTML = iconHtml;
+        modal.querySelector('h2').textContent = title;
+        modal.querySelector('.info-inner').innerHTML = innerContent.innerHTML;
+        
+        // Show modal
+        modal.style.display = 'flex';
+    }
+    
+    function closeInfoModal() {
+        const modal = document.getElementById('infoModal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Recipe details toggle
+    function toggleRecipe(card) {
+        const details = card.querySelector('.recipe-details');
+        if (details) {
+            details.classList.toggle('open');
+        }
+    }
+
+    async function loadData() {
+        try {
+            const res = await fetch(SCRIPT_URL);
+            allPosts = await res.json();
+            processPendingAuthored(allPosts);
+            render('הכל');
+        } catch(e) { 
+            document.getElementById('posts-container').innerHTML = `
+                <div style="text-align: center; padding: 50px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--warning);"></i>
+                    <p style="margin-top: 20px; font-size: 1.1rem;">שגיאה בטעינה. נסו לרענן את העמוד.</p>
+                </div>
+            `; 
+        }
+    }
+
+    function render(category) {
+        const container = document.getElementById('posts-container');
+        container.innerHTML = '';
+        
+        // Get current logged-in user to control delete button visibility
+        // Note: This is client-side only. Server-side validation is also required in the backend.
+        const currentUser = localStorage.getItem('currentUser');
+        
+        let filtered = category === 'הכל' ? allPosts : allPosts.filter(p => p.Category === category);
+        
+        // Apply search filter
+        if (currentSearchTerm) {
+            filtered = filtered.filter(p => {
+                const searchFields = [p.Subject, p.Content, p.Name, p.Category].filter(field => field != null).join(' ').toLowerCase();
+                return searchFields.includes(currentSearchTerm);
+            });
+        }
+        
+        // Filter to only show valid posts with ID, Name, and Content (excluding replies with ParentID)
+        let validPosts = filtered.filter(p => p.ID && p.Name && (p.Subject || p.Content) && !p.ParentID);
+        
+        // Sort threads by timestamp - newest first
+        validPosts.sort((a, b) => new Date(b.Timestamp) - new Date(a.Timestamp));
+        
+        if (validPosts.length === 0) {
+            const message = currentSearchTerm ? 'לא נמצאו תוצאות לחיפוש' : 'אין הודעות עדיין';
+            const submessage = currentSearchTerm ? 'נסו לחפש מונח אחר' : 'היו הראשונים לפתוח שרשור חדש!';
+            container.innerHTML = `
+                <div style="text-align: center; padding: 80px 20px;">
+                    <i class="fas fa-${currentSearchTerm ? 'search' : 'comments'}" style="font-size: 4rem; color: var(--text-muted); opacity: 0.5;"></i>
+                    <h3 style="margin-top: 25px; color: var(--text-light);">${message}</h3>
+                    <p style="color: var(--text-muted);">${submessage}</p>
+                </div>
+            `;
+            return;
+        }
+        
+        validPosts.forEach(t => {
+            // Filter replies to only show valid ones with Name and Content, sort oldest first
+            const replies = allPosts.filter(r => r.ParentID === t.ID && r.Name && r.Content)
+                .sort((a, b) => new Date(a.Timestamp) - new Date(b.Timestamp));
+            const categoryIcon = getCategoryIcon(t.Category);
+            
+            // Format date with time
+            const threadDate = new Date(t.Timestamp);
+            const threadDateTime = threadDate.toLocaleDateString('he-IL') + ' ' + threadDate.toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit' });
+            
+            container.innerHTML += `
+                <div class="thread-card" onclick="toggleReplies('${t.ID}')">
+                    <small>
+                        <i class="${categoryIcon}"></i> ${t.Category} 
+                        <span style="margin: 0 8px;">|</span>
+                        <i class="fas fa-calendar-alt"></i> ${threadDateTime}
+                    </small>
+                    <h3>${t.Subject}</h3>
+                    <p>${t.Content}</p>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05);">
+                        <span style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-user-circle" style="color: var(--accent);"></i>
+                            מאת: <strong>${t.Name}</strong>
+                            ${currentUser && currentUser === t.Name ? `<button class="delete-btn" onclick="event.stopPropagation(); deletePost('${t.ID}')"><i class="fas fa-trash"></i> מחק</button>` : ''}
+                        </span>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="tab-btn" style="padding: 8px 18px; font-size: 0.9rem;" onclick="event.stopPropagation(); addLike('${t.ID}')">
+                                <i class="fas fa-heart" style="color: #e74c3c;"></i> ${t.Likes || 0}
+                            </button>
+                            <button class="tab-btn" style="padding: 8px 18px; font-size: 0.9rem;" onclick="event.stopPropagation(); toggleReplies('${t.ID}')">
+                                <i class="fas fa-comment-dots"></i> ${replies.length}
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="box-${t.ID}" class="reply-box" onclick="event.stopPropagation()">
+                        <h4 style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-comments" style="color: var(--accent);"></i>
+                            תגובות (${replies.length}):
+                        </h4>
+                        ${replies.length > 0 ? replies.map((r, idx) => {
+                            // Format reply date with time - use thread timestamp as fallback if reply timestamp missing
+                            const replyTimestamp = r.Timestamp || t.Timestamp;
+                            const replyDate = new Date(replyTimestamp);
+                            const replyDateTime = replyDate.toLocaleDateString('he-IL') + ' ' + replyDate.toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit' });
+                            
+                            return `
+                            <div class="reply-item" id="reply-${r.ID || idx}">
+                                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <i class="fas fa-user" style="color: var(--accent);"></i>
+                                        <strong>${r.Name}</strong>
+                                        <span style="color: var(--text-muted); font-size: 0.75rem; margin-right: 8px;">
+                                            <i class="fas fa-clock" style="font-size: 0.7rem;"></i> ${replyDateTime}
+                                        </span>
+                                        ${currentUser && currentUser === r.Name ? `<button class="delete-btn" onclick="event.stopPropagation(); deleteReply('${r.ID || `reply-${t.ID}-${idx}`}')"><i class="fas fa-trash"></i> מחק</button>` : ''}
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <button class="tab-btn" style="padding: 6px 12px; font-size: 0.8rem;" onclick="event.stopPropagation(); addCommentLike('${r.ID || `reply-${t.ID}-${idx}`}')">
+                                            <i class="fas fa-heart" style="color: #e74c3c;"></i> ${r.Likes || 0}
+                                        </button>
+                                        <button class="reply-btn" onclick="event.stopPropagation(); toggleReplyToReply('${t.ID}-${idx}')">
+                                            <i class="fas fa-reply"></i> הגב
+                                        </button>
+                                    </div>
+                                </div>
+                                <p style="margin-right: 28px;">${r.Content}</p>
+                                <div id="reply-box-${t.ID}-${idx}" class="reply-to-reply-box">
+                                    <div style="display: flex; gap: 8px;">
+                                        <input type="text" id="nested-rep-in-${t.ID}-${idx}" placeholder="הגב לתגובה..." style="flex: 1; padding: 10px 14px; font-size: 0.9rem;">
+                                        <button class="tab-btn active" style="padding: 10px 18px; font-size: 0.85rem;" onclick="event.stopPropagation(); sendNestedReply('${t.ID}', '${r.Name}', ${idx})">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        `}).join('') : '<p style="color: var(--text-muted); text-align: center;">אין תגובות עדיין. היו הראשונים להגיב!</p>'}
+                        <div style="margin-top: 20px; display: flex; gap: 10px;">
+                            <input type="text" id="rep-in-${t.ID}" placeholder="כתוב תגובה..." style="flex: 1;">
+                            <button class="tab-btn active" style="padding: 14px 25px;" onclick="sendReply('${t.ID}')">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    function getCategoryIcon(category) {
+        const icons = {
+            'מתכונים': 'fas fa-utensils',
+            'כשרות': 'fas fa-star-of-david',
+            'רפואי': 'fas fa-heartbeat',
+            'כללי': 'fas fa-comments',
+            'מסעדות': 'fas fa-store',
+            'תזונה': 'fas fa-apple-whole',
+            'צרכנות': 'fas fa-shopping-cart'
+        };
+        return icons[category] || 'fas fa-folder';
+    }
+
+    function openPostModal() {
+        const currentUser = localStorage.getItem('currentUser');
+        const nameField = document.getElementById('name');
+        const sendBtn = document.getElementById('sendPostBtn');
+        
+        // Re-enable the send button when opening modal
+        if (sendBtn) {
+            sendBtn.disabled = false;
+        }
+        
+        if (currentUser) {
+            nameField.style.display = 'none';
+            // Also hide the label if it exists
+            const labels = document.querySelectorAll('#postModal label');
+            labels.forEach(label => {
+                if (label.getAttribute('for') === 'name') {
+                    label.style.display = 'none';
+                }
+            });
+        } else {
+            nameField.style.display = 'block';
+            const labels = document.querySelectorAll('#postModal label');
+            labels.forEach(label => {
+                if (label.getAttribute('for') === 'name') {
+                    label.style.display = 'block';
+                }
+            });
+        }
+        
+        document.getElementById('postModal').style.display = 'flex';
+    }
+
+    async function sendPost() {
+        const sendBtn = document.getElementById('sendPostBtn');
+        
+        // Prevent double submission
+        if (sendBtn.disabled) {
+            return;
+        }
+        
+        const currentUser = localStorage.getItem('currentUser');
+        const userEmail = localStorage.getItem('userEmail') || '';
+        const nameFromInput = document.getElementById('name').value;
+        const userName = currentUser || nameFromInput;
+        
+        if (!userName || !userName.trim()) {
+            showToast('נא להזין שם או להתחבר');
+            return;
+        }
+        
+        const payload = {
+            name: userName,  // Keep for backward compatibility
+            username: userName,  // New field as per requirements
+            email: userEmail,  // Include email for auto-reply
+            category: document.getElementById('category').value,
+            subject: document.getElementById('subject').value,
+            content: document.getElementById('content').value
+        };
+        
+        if (!payload.subject) {
+            showToast('נא להזין נושא להודעה');
+            return;
+        }
+        if (!payload.content) {
+            showToast('נא להזין תוכן להודעה');
+            return;
+        }
+        
+        // Disable button and close modal immediately
+        sendBtn.disabled = true;
+        document.getElementById('postModal').style.display = 'none';
+        
+        try {
+            addPendingAuthored({ name: payload.name, content: payload.content, timestamp: new Date().toISOString() });
+            await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) });
+            showToast('ההודעה שלך נשלחה בהצלחה!');
+            setTimeout(() => location.reload(), 1500);
+        } catch (error) {
+            console.error('Error sending post:', error);
+            showToast('שגיאה בשליחת ההודעה. נסה שנית.');
+            sendBtn.disabled = false;
+            document.getElementById('postModal').style.display = 'flex';
+        }
+    }
+
+    async function sendReply(parentId) {
+        // Get the send button and check if already submitting
+        const replyBox = document.getElementById(`box-${parentId}`);
+        const sendBtn = replyBox?.querySelector('button.tab-btn.active');
+        if (sendBtn?.disabled) return;
+        
+        const currentUser = localStorage.getItem('currentUser');
+        const userEmail = localStorage.getItem('userEmail') || '';
+        const inputField = document.getElementById(`rep-in-${parentId}`);
+        const content = inputField.value;
+        if (!content) return;
+        
+        let name;
+        if (currentUser) {
+            name = currentUser;
+        } else {
+            name = await showNameModal();
+            if(!name) return;
+        }
+        
+        // Disable button and close input immediately to prevent multiple submissions
+        if (sendBtn) sendBtn.disabled = true;
+        const savedContent = content;
+        inputField.value = '';
+        replyBox.style.display = 'none';
+        
+        try {
+            addPendingAuthored({ name, content, timestamp: new Date().toISOString() });
+            await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify({ name, username: name, email: userEmail, content, parentId }) });
+            showToast('תגובתך נשלחה בהצלחה!');
+            setTimeout(() => location.reload(), 1500);
+        } catch (error) {
+            // Re-enable button and restore content on error
+            if (sendBtn) sendBtn.disabled = false;
+            inputField.value = savedContent;
+            replyBox.style.display = 'block';
+            showToast('שגיאה בשליחת התגובה. נסה שנית.');
+        }
+    }
+
+    async function addLike(id, isComment = false) {
+        const itemType = isComment ? 'תגובה' : 'הודעה';
+        if (hasLiked(id)) {
+            showToast(`כבר עשית לייק ל${itemType} זו`);
+            return;
+        }
+        // Mark as liked immediately to prevent multiple clicks
+        markAsLiked(id);
+        showToast('תודה על הלייק!');
+        try {
+            await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify({action: "like", id: id}) });
+            loadData();
+        } catch (error) {
+            // Revert like state on error
+            const likedPosts = JSON.parse(localStorage.getItem('likedPosts') || '[]');
+            const index = likedPosts.indexOf(id);
+            if (index > -1) {
+                likedPosts.splice(index, 1);
+                localStorage.setItem('likedPosts', JSON.stringify(likedPosts));
+            }
+            showToast('שגיאה בשליחת הלייק. נסה שנית.');
+        }
+    }
+
+    async function addCommentLike(id) {
+        return addLike(id, true);
+    }
+
+    function toggleReplies(id) {
+        const el = document.getElementById(`box-${id}`);
+        el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function toggleReplyToReply(replyId) {
+        const el = document.getElementById(`reply-box-${replyId}`);
+        if (el) {
+            el.classList.toggle('open');
+        }
+    }
+
+    async function sendNestedReply(parentId, replyToName, idx) {
+        // Get the send button and check if already submitting
+        const replyBox = document.getElementById(`reply-box-${parentId}-${idx}`);
+        const sendBtn = replyBox?.querySelector('button.tab-btn.active');
+        if (sendBtn?.disabled) return;
+        
+        const currentUser = localStorage.getItem('currentUser');
+        const userEmail = localStorage.getItem('userEmail') || '';
+        const inputField = document.getElementById(`nested-rep-in-${parentId}-${idx}`);
+        const content = inputField.value;
+        if (!content) return;
+        
+        let name;
+        if (currentUser) {
+            name = currentUser;
+        } else {
+            name = await showNameModal();
+            if (!name) return;
+        }
+        
+        // Disable button and close input immediately to prevent multiple submissions
+        if (sendBtn) sendBtn.disabled = true;
+        const savedContent = content;
+        inputField.value = '';
+        replyBox.classList.remove('open');
+        
+        try {
+            const fullContent = `@${replyToName}: ${content}`;
+            addPendingAuthored({ name, content: fullContent, timestamp: new Date().toISOString() });
+            await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify({ name, username: name, email: userEmail, content: fullContent, parentId }) });
+            showToast('תגובתך נשלחה בהצלחה!');
+            setTimeout(() => location.reload(), 1500);
+        } catch (error) {
+            // Re-enable button and restore content on error
+            if (sendBtn) sendBtn.disabled = false;
+            inputField.value = savedContent;
+            replyBox.classList.add('open');
+            showToast('שגיאה בשליחת התגובה. נסה שנית.');
+        }
+    }
+
+    async function deletePost(id) {
+        if (!confirm('האם אתה בטוח שברצונך למחוק הודעה זו?')) return;
+        await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify({ action: 'delete', id: id }) });
+        showToast('ההודעה נמחקה בהצלחה');
+        setTimeout(() => location.reload(), 1500);
+    }
+
+    async function deleteReply(id) {
+        if (!confirm('האם אתה בטוח שברצונך למחוק תגובה זו?')) return;
+        await fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify({ action: 'delete', id: id }) });
+        showToast('התגובה נמחקה בהצלחה');
+        setTimeout(() => location.reload(), 1500);
+    }
+
+    function changeCategory(cat, btn) {
+        document.querySelectorAll('.nav-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render(cat);
+    }
+
+    function toggleTheme() {
+        const body = document.body;
+        const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    }
+
+    // Load saved theme and sidebar state
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.setAttribute('data-theme', savedTheme);
+        }
+        
+        // Sidebar starts hidden by default - no need to load saved state
+        // The sidebar will be hidden on page load and user can toggle it
+        
+        // Load user state
+        updateUserDisplay();
+    });
+
+    loadData();
+</script>
+</body>
+</html>
